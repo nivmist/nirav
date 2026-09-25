@@ -350,7 +350,7 @@ body { background: var(--color-bg); color: var(--color-text); }
 a { color: var(--color-link, var(--color-primary)); }</style>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nirav Mistry | AI Platform Commercialization &amp; Market Activation</title>
+<title>Nirav Mistry | AI Executive | Generative &amp; Agentic AI Strategy | Enterprise GTM &amp; AI Platform Commercialization</title>
 <style>
 :root {
   --primary: #1A1A2E;
@@ -408,11 +408,11 @@ body {
   position: relative;
 }
 .hero .tagline {
-  font-size: 1rem;
+  font-size: 0.95rem;
   color: rgba(255,255,255,0.85);
   font-weight: 400;
-  letter-spacing: 0.5px;
-  max-width: 700px;
+  letter-spacing: 0.3px;
+  max-width: 760px;
   margin: 0 auto 20px;
 }
 .hero .contact-row {
@@ -438,9 +438,7 @@ body {
   flex-wrap: wrap;
   margin-top: 30px;
 }
-.stat-item {
-  text-align: center;
-}
+.stat-item { text-align: center; }
 .stat-item .stat-value {
   font-size: 1.6rem;
   font-weight: 700;
@@ -473,7 +471,7 @@ body {
   overflow-x: auto;
 }
 .tab-btn {
-  padding: 14px 22px;
+  padding: 14px 20px;
   border: none;
   background: none;
   font-family: var(--font);
@@ -485,10 +483,7 @@ body {
   transition: all 0.2s ease;
   white-space: nowrap;
 }
-.tab-btn:hover {
-  color: var(--text);
-  background: var(--border-light);
-}
+.tab-btn:hover { color: var(--text); background: var(--border-light); }
 .tab-btn.active {
   color: var(--accent);
   border-bottom-color: var(--accent);
@@ -517,6 +512,34 @@ body {
   display: inline-block;
 }
 
+/* ACHIEVEMENTS */
+.achieve-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+.achieve-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px;
+  box-shadow: var(--shadow);
+  border-top: 3px solid var(--accent);
+}
+.achieve-card .ach-metric {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--accent);
+  font-family: var(--font-mono);
+  margin-bottom: 6px;
+}
+.achieve-card .ach-desc {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
 /* COMPETENCY GRID */
 .comp-grid {
   display: grid;
@@ -532,10 +555,7 @@ body {
   box-shadow: var(--shadow);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-.comp-card:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-lg);
-}
+.comp-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); }
 .comp-card h3 {
   font-size: 0.85rem;
   font-weight: 700;
@@ -544,24 +564,10 @@ body {
   letter-spacing: 0.5px;
   margin-bottom: 12px;
 }
-.comp-card ul {
-  list-style: none;
-  padding: 0;
-}
-.comp-card li {
-  font-size: 0.82rem;
+.comp-card p {
+  font-size: 0.8rem;
   color: var(--text-secondary);
-  padding: 4px 0;
-  padding-left: 16px;
-  position: relative;
-}
-.comp-card li::before {
-  content: "\25C6";
-  position: absolute;
-  left: 0;
-  color: var(--accent);
-  font-size: 0.6rem;
-  top: 6px;
+  line-height: 1.6;
 }
 
 /* EXPERIENCE CARD */
@@ -592,10 +598,7 @@ body {
   margin-bottom: 12px;
   line-height: 1.5;
 }
-.exp-card ul {
-  list-style: none;
-  padding: 0;
-}
+.exp-card ul { list-style: none; padding: 0; }
 .exp-card li {
   font-size: 0.82rem;
   color: var(--text);
@@ -610,6 +613,7 @@ body {
   color: var(--accent);
   font-weight: bold;
 }
+.exp-card li strong { color: var(--primary); }
 
 /* EARLIER CAREER */
 .earlier-card {
@@ -624,26 +628,10 @@ body {
   flex-wrap: wrap;
   gap: 8px;
 }
-.earlier-card .ec-title {
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--primary);
-}
-.earlier-card .ec-company {
-  font-size: 0.78rem;
-  color: var(--text-secondary);
-}
-.earlier-card .ec-date {
-  font-size: 0.75rem;
-  color: var(--text-muted);
-  font-family: var(--font-mono);
-}
-.earlier-card .ec-desc {
-  width: 100%;
-  font-size: 0.78rem;
-  color: var(--text-secondary);
-  margin-top: 4px;
-}
+.earlier-card .ec-title { font-size: 0.85rem; font-weight: 600; color: var(--primary); }
+.earlier-card .ec-company { font-size: 0.78rem; color: var(--text-secondary); }
+.earlier-card .ec-date { font-size: 0.75rem; color: var(--text-muted); font-family: var(--font-mono); }
+.earlier-card .ec-desc { width: 100%; font-size: 0.78rem; color: var(--text-secondary); margin-top: 4px; }
 
 /* VENTURES */
 .venture-card {
@@ -653,11 +641,7 @@ body {
   color: #fff;
   box-shadow: var(--shadow-lg);
 }
-.venture-card h3 {
-  font-size: 1.1rem;
-  font-weight: 700;
-  margin-bottom: 4px;
-}
+.venture-card h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 4px; }
 .venture-card .venture-link {
   color: var(--accent);
   font-size: 0.82rem;
@@ -665,11 +649,7 @@ body {
   border-bottom: 1px dotted var(--accent);
 }
 .venture-card .venture-link:hover { opacity: 0.8; }
-.venture-card ul {
-  list-style: none;
-  padding: 0;
-  margin-top: 16px;
-}
+.venture-card ul { list-style: none; padding: 0; margin-top: 16px; }
 .venture-card li {
   font-size: 0.82rem;
   color: rgba(255,255,255,0.85);
@@ -686,6 +666,15 @@ body {
 }
 
 /* CERTIFICATIONS */
+.cert-group { margin-bottom: 24px; }
+.cert-group h3 {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+}
 .cert-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -711,18 +700,13 @@ body {
   align-items: center;
   justify-content: center;
   color: var(--accent);
-  font-size: 0.7rem;
+  font-size: 0.62rem;
   font-weight: 700;
   flex-shrink: 0;
 }
 
-/* INDUSTRIES */
-.industry-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 16px;
-}
+/* TAGS */
+.industry-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
 .industry-tag {
   background: var(--card);
   border: 1px solid var(--border);
@@ -743,12 +727,11 @@ body {
   margin-top: 40px;
 }
 
-/* RESPONSIVE */
 @media (max-width: 768px) {
   .hero { padding: 40px 20px 36px; }
   .hero h1 { font-size: 2rem; }
   .content { padding: 20px 16px 40px; }
-  .tab-btn { padding: 12px 14px; font-size: 0.75rem; }
+  .tab-btn { padding: 12px 12px; font-size: 0.75rem; }
   .stats-bar { gap: 20px; }
   .exp-card { padding: 18px; }
 }
@@ -758,18 +741,19 @@ body {
 
 <div class="hero">
   <h1>NIRAV MISTRY</h1>
-  <p class="tagline">AI Platform Strategy &nbsp;|&nbsp; Enterprise GTM Leadership &nbsp;|&nbsp; Ecosystem Partnerships</p>
+  <p class="tagline">AI Executive &nbsp;|&nbsp; Generative &amp; Agentic AI Strategy &nbsp;|&nbsp; Enterprise GTM &amp; AI Platform Commercialization &nbsp;|&nbsp; Strategic Alliances</p>
   <div class="contact-row">
     <span>📍 Austin, TX</span>
     <span>📞 (737) 298-7122</span>
     <span>✉ nirav_mistry@hotmail.com</span>
-    <a href="https://www.linkedin.com/in/nirav10/" target="_blank">LinkedIn: nirav10</a>
+    <a href="https://www.linkedin.com/in/nirav10/" target="_blank">linkedin.com/in/nirav10</a>
+    <a href="https://nivmist.github.io/nirav/" target="_blank">Portfolio</a>
   </div>
   <div class="stats-bar">
     <div class="stat-item"><div class="stat-value">$50M+</div><div class="stat-label">Assets Safeguarded</div></div>
-    <div class="stat-item"><div class="stat-value">1,000+</div><div class="stat-label">Users Trained</div></div>
+    <div class="stat-item"><div class="stat-value">1,000+</div><div class="stat-label">Users Enabled</div></div>
     <div class="stat-item"><div class="stat-value">20%</div><div class="stat-label">Productivity Gain</div></div>
-    <div class="stat-item"><div class="stat-value">15%</div><div class="stat-label">Fraud Reduced</div></div>
+    <div class="stat-item"><div class="stat-value">4</div><div class="stat-label">Global Regions</div></div>
     <div class="stat-item"><div class="stat-value">5+</div><div class="stat-label">AI Platforms</div></div>
   </div>
 </div>
@@ -777,6 +761,7 @@ body {
 <div class="nav-container">
   <div class="tabs">
     <button class="tab-btn active" onclick="switchTab('summary')">Summary</button>
+    <button class="tab-btn" onclick="switchTab('achievements')">Achievements</button>
     <button class="tab-btn" onclick="switchTab('competencies')">Competencies</button>
     <button class="tab-btn" onclick="switchTab('experience')">Experience</button>
     <button class="tab-btn" onclick="switchTab('ventures')">Ventures</button>
@@ -790,24 +775,50 @@ body {
   <div id="tab-summary" class="tab-panel active">
     <h2 class="section-title">Executive Summary</h2>
     <p style="font-size:0.9rem; line-height:1.7; color:var(--text); margin-bottom:16px;">
-      AI Platform Commercialization leader driving cross-platform GTM strategy, market activation, and scalable revenue growth across a <strong>$37B+ enterprise GenAI market</strong>. Architecting the commercial system that translates strategic AI partnerships (AWS, Anthropic, Microsoft, ElevenLabs, LangChain) into differentiated customer propositions, repeatable go-to-market plays, and field-ready activation at scale.
+      Visionary <strong>AI executive</strong> and <strong>enterprise transformation leader</strong> with 10+ years spanning <strong>AI strategy, go-to-market (GTM) leadership, strategic partnerships, and cybersecurity</strong>. Currently owns the <strong>full P&amp;L</strong> for a global AI partner practice at DXC Technology, commercializing <strong>Generative AI, Agentic AI, and Voice AI</strong> across a $37B+ enterprise GenAI market. Architects the commercial engine that converts strategic alliances with <strong>AWS, Anthropic, Microsoft, ElevenLabs, and LangChain</strong> into differentiated value propositions, repeatable GTM plays, and qualified pipeline across four global regions.
     </p>
     <p style="font-size:0.9rem; line-height:1.7; color:var(--text); margin-bottom:16px;">
-      Proven track record of safeguarding <strong>$50M+ in assets</strong>, driving <strong>20% productivity gains</strong>, reducing fraud by <strong>15%</strong>, and training <strong>1,000+ users</strong> on AI adoption. Known for aligning enterprise AI strategy with security, compliance, and measurable commercial outcomes across Fortune 500, public sector, and high-growth organizations.
+      Trusted <strong>C-suite and board advisor</strong> who bridges business strategy and technical execution, aligning <strong>AI adoption, Responsible AI governance, security, and compliance</strong> with measurable business outcomes, revenue growth, and ROI for Fortune 500, public sector, and high-growth organizations.
     </p>
     <div style="margin-top:24px;">
-      <h2 class="section-title">Industries Served</h2>
+      <h2 class="section-title">Industries</h2>
       <div class="industry-tags">
-        <span class="industry-tag">Department of Defense (DoD)</span>
-        <span class="industry-tag">Federal Government</span>
-        <span class="industry-tag">State &amp; Local Government</span>
+        <span class="industry-tag">DoD</span>
+        <span class="industry-tag">Federal, State &amp; Local Government</span>
+        <span class="industry-tag">Financial Services</span>
+        <span class="industry-tag">Insurance</span>
         <span class="industry-tag">Private Equity</span>
         <span class="industry-tag">Healthcare &amp; Life Sciences</span>
         <span class="industry-tag">Manufacturing</span>
-        <span class="industry-tag">Financial Services</span>
-        <span class="industry-tag">Insurance</span>
         <span class="industry-tag">Travel &amp; Hospitality</span>
         <span class="industry-tag">Retail &amp; E-commerce</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ACHIEVEMENTS TAB -->
+  <div id="tab-achievements" class="tab-panel">
+    <h2 class="section-title">Selected Executive Achievements</h2>
+    <div class="achieve-grid">
+      <div class="achieve-card">
+        <div class="ach-metric">$50M+</div>
+        <div class="ach-desc">Enterprise assets safeguarded through Zero Trust security architecture, AI governance, and risk management programs.</div>
+      </div>
+      <div class="achieve-card">
+        <div class="ach-metric">~12%</div>
+        <div class="ach-desc">Productivity gains delivered by leading Microsoft Copilot and Generative AI adoption programs across North America, LATAM, and EMEA.</div>
+      </div>
+      <div class="achieve-card">
+        <div class="ach-metric">15%</div>
+        <div class="ach-desc">Reduction in fraud achieved through data security, threat detection, and compliance modernization initiatives.</div>
+      </div>
+      <div class="achieve-card">
+        <div class="ach-metric">1,000+</div>
+        <div class="ach-desc">Users enabled on AI adoption through change management, executive workshops, and a Center of Excellence (CoE) model.</div>
+      </div>
+      <div class="achieve-card">
+        <div class="ach-metric">Global P&amp;L</div>
+        <div class="ach-desc">Ownership of the DXC–ElevenLabs AI partnership across 4 regions; orchestrated 5+ AI platform partnerships into cross-platform GTM plays.</div>
       </div>
     </div>
   </div>
@@ -817,37 +828,28 @@ body {
     <h2 class="section-title">Core Competencies</h2>
     <div class="comp-grid">
       <div class="comp-card">
-        <h3>AI Platform Strategy</h3>
-        <ul>
-          <li>Cross-Platform GTM Play Development</li>
-          <li>AI Commercialization Lifecycle</li>
-          <li>Agentic AI Architecture Design</li>
-          <li>Partner Ecosystem Management</li>
-          <li>Use-Case Prioritization &amp; Scoring</li>
-          <li>Pricing &amp; Packaging Strategy</li>
-        </ul>
+        <h3>AI Strategy &amp; Transformation</h3>
+        <p>AI Strategy &amp; Roadmap · Generative AI · Agentic AI · Large Language Models (LLMs) · Conversational &amp; Voice AI · AI Operating Model Design · AI Readiness Assessment · Use-Case Prioritization &amp; Value Scoring · AI Center of Excellence · Digital Transformation</p>
       </div>
       <div class="comp-card">
-        <h3>Security &amp; Compliance</h3>
-        <ul>
-          <li>Zero Trust &amp; CMMC Frameworks</li>
-          <li>Microsoft Security Stack (Defender, Sentinel, Entra, Purview)</li>
-          <li>ISO 27001, NIST, Essential Eight</li>
-          <li>Data Security &amp; AI Governance</li>
-          <li>Responsible AI &amp; Risk Frameworks</li>
-          <li>Compliance Automation</li>
-        </ul>
+        <h3>Commercial &amp; GTM Leadership</h3>
+        <p>P&amp;L Ownership · Go-to-Market Strategy · AI Platform Commercialization · Revenue Growth · Pipeline Generation · Pricing Strategy · Competitive Positioning · Solution &amp; Consultative Selling · Sales Enablement · Marketplace Offerings</p>
+      </div>
+      <div class="comp-card">
+        <h3>Partnerships &amp; Ecosystem</h3>
+        <p>Strategic Alliances · Partner Ecosystem Management · Co-Sell &amp; Joint GTM · Deal Registration · Co-Innovation · Hyperscaler Partnerships (AWS, Microsoft Azure) · Frontier AI Model Partners</p>
       </div>
       <div class="comp-card">
         <h3>Executive Leadership</h3>
-        <ul>
-          <li>Lighthouse Account Origination</li>
-          <li>C-Suite &amp; Board-Level Advisory</li>
-          <li>Cross-Functional Program Execution</li>
-          <li>Field Activation &amp; Commercial Readiness</li>
-          <li>Revenue Growth &amp; Pipeline Strategy</li>
-          <li>Global Delivery &amp; Stakeholder Management</li>
-        </ul>
+        <p>C-Suite &amp; Board Advisory · Executive Stakeholder Management · Cross-Functional Leadership · Executive Communication · Change Management · Thought Leadership · KPI/OKR Governance · Customer Success &amp; Value Realization</p>
+      </div>
+      <div class="comp-card">
+        <h3>AI Governance, Security &amp; Risk</h3>
+        <p>Responsible AI · AI Governance &amp; Risk Frameworks · Data Security Posture Management (DSPM) · Zero Trust · CMMC · NIST · ISO/IEC 27001 · Essential Eight · Regulatory Compliance · Data Privacy</p>
+      </div>
+      <div class="comp-card">
+        <h3>Technology Platforms</h3>
+        <p>Anthropic Claude · ElevenLabs · LangChain · Amazon Quick · Azure AI Foundry · Azure AI · Microsoft 365 Copilot · Microsoft Fabric · Defender · Sentinel · Entra ID · Intune · Purview · Power Platform</p>
       </div>
     </div>
   </div>
@@ -857,38 +859,39 @@ body {
     <h2 class="section-title">Professional Experience</h2>
 
     <div class="exp-card">
-      <div class="role-title">Senior Manager → Director Track | Market Advisory &amp; Co-Innovation Interface</div>
-      <div class="company-line">DXC Technology | LabX AI Platform Engine | Apr 2026 – Present</div>
-      <p class="role-desc">Sub-Function Owner within the AI Platform Commercialization Engine — owning strategic advisory, customer use-case prioritization, co-innovation requirements, and cross-platform commercial pattern recognition across AWS, Anthropic, Microsoft, ElevenLabs, and LangChain partnerships.</p>
+      <div class="role-title">Global Practice Lead, ElevenLabs Partnership (Director Track)</div>
+      <div class="company-line">DXC Technology | LabX AI Platform Commercialization Engine | Aug 2026 – Present</div>
+      <p class="role-desc">Lead the global DXC–ElevenLabs strategic AI partnership with full P&amp;L accountability, owning the commercialization lifecycle end to end: partner relationship management, GTM strategy, pipeline, and market activation across EMEA, APJ, UKI, and the Americas.</p>
       <ul>
-        <li>Lead strategic commercial advisory to platform business owners, translating customer demand signals into prioritized use cases, commercial theses, and repeatable GTM plays across 5+ AI platform partnerships.</li>
-        <li>Own lighthouse account identification and opportunity shaping — partnering with Markets, Consulting, and account teams to convert customer business problems into qualified pipeline opportunities.</li>
-        <li>Drive co-innovation interface between the Commercialization Engine and Co-Innovation &amp; Solutions teams — authoring commercial requirements, demand evidence briefs, and use-case specifications that shape solution development.</li>
-        <li>Develop cross-platform pattern recognition frameworks — identifying winning commercial motions and scaling them across platforms, industries, and geographies.</li>
-        <li>Build field activation assets including customer narratives, executive conversation guides, and competitive positioning that enable sales teams to confidently engage prospects.</li>
-        <li>Designed and launched the Amazon Quick Practice strategy including marketplace offerings, agentic AI readiness assessments, and enterprise discovery engagement playbooks.</li>
-        <li>Establish feedback loops between field, customers, platform business leaders, and partners — ensuring commercial plays evolve based on real-world evidence and conversion data.</li>
+        <li><strong>Own the executive partner relationship</strong> as DXC’s primary interface to ElevenLabs, directing opportunity management, deal registration, joint asset development, and aligned co-sell motions across global markets.</li>
+        <li><strong>Drive pipeline generation and qualification</strong> across Healthcare, Financial Services, Manufacturing, and European markets, shaping joint value propositions for Voice AI, Conversational AI agents, and voice-to-voice (V2V) translation.</li>
+        <li><strong>Built the practice GTM playbook</strong> covering outcome-based offer strategy, competitive positioning, pricing architecture, and field-ready sales enablement assets.</li>
+        <li><strong>Report to senior leadership</strong> through weekly executive dashboards tracking influenced pipeline, deal registrations, lighthouse account progress, and cross-functional activation milestones.</li>
       </ul>
     </div>
 
     <div class="exp-card">
-      <div class="role-title">Senior Manager | Enterprise AI Advisory</div>
-      <div class="company-line">DXC Technology | AdvisoryX | Feb 2026 – Apr 2026</div>
+      <div class="role-title">Senior Manager, Enterprise AI Advisory &amp; Co-Innovation</div>
+      <div class="company-line">DXC Technology | LabX AI Platform Commercialization Engine | Feb 2026 – Aug 2026</div>
+      <p class="role-desc">Sub-function owner for strategic AI advisory, use-case prioritization, and co-innovation requirements, recognizing cross-platform commercial patterns across AWS, Anthropic, Microsoft, ElevenLabs, and LangChain partnerships.</p>
       <ul>
-        <li>Delivered enterprise AI advisory engagements including agentic AI discovery assessments, organizational readiness evaluations, and AI operating model design for Fortune 500 clients.</li>
-        <li>Led client workshops on AI strategy, responsible AI governance, and platform selection — helping organizations make evidence-based decisions on deploying AI at scale.</li>
-        <li>Developed structured 3-week advisory engagement frameworks for clients in evaluation phase of their enterprise AI journey.</li>
+        <li><strong>Advised Fortune 500 C-suite clients</strong> on enterprise AI transformation, delivering Agentic AI discovery assessments, organizational readiness evaluations, and AI operating model design.</li>
+        <li><strong>Created a repeatable 3-week AI advisory framework</strong> and led executive workshops on AI strategy, Responsible AI governance, and platform selection, moving clients from evaluation to evidence-based AI investment decisions.</li>
+        <li><strong>Translated customer demand signals into commercial strategy</strong> — prioritized use cases, commercial theses, and GTM plays across 5+ AI platforms, and originated lighthouse accounts with Markets and Consulting teams.</li>
+        <li><strong>Designed and launched the Amazon Quick practice strategy,</strong> including marketplace offerings, Agentic AI readiness assessments, and enterprise discovery playbooks.</li>
+        <li><strong>Led the co-innovation interface</strong> with Solutions teams, authoring commercial requirements, demand-evidence briefs, and use-case specifications that shaped product and solution development.</li>
+        <li><strong>Enabled the field</strong> with customer narratives, executive conversation guides, and competitive battlecards, and built feedback loops among field, customers, and partners to refine plays based on conversion data.</li>
       </ul>
     </div>
 
     <div class="exp-card">
-      <div class="role-title">Senior Customer Success Manager — AI, Security &amp; Copilot</div>
-      <div class="company-line">Accenture | Microsoft Programs | Dec 2022 – Feb 2026</div>
+      <div class="role-title">Senior Customer Success Manager – AI, Security &amp; Copilot</div>
+      <div class="company-line">Accenture | Microsoft Programs | Dec 2022 – Jan 2026</div>
       <ul>
-        <li>Led Copilot adoption programs across North America, LATAM, and EMEA — designing pilot programs, rollout strategies, and governance frameworks that drove measurable ROI for enterprise and public sector clients.</li>
-        <li>Architected Microsoft 365 security solutions using Defender, Sentinel, Entra ID, Intune, and Purview — implementing cloud-native designs supporting compliance and analytics with Microsoft Fabric and Azure AI.</li>
-        <li>Delivered executive workshops on DSPM, AI Foundry, CMMC, and risk governance for both public and private sector organizations.</li>
-        <li>Established a Center of Excellence to monitor adoption, set governance frameworks, and expand Copilot Prompt App usage — creating dashboards, RBAC controls, and data migration workflows.</li>
+        <li><strong>Led Microsoft 365 Copilot and Generative AI adoption programs</strong> across North America, LATAM, and EMEA, designing pilots, rollout strategies, and governance frameworks that delivered measurable ROI and 20% productivity gains.</li>
+        <li><strong>Architected enterprise security solutions</strong> using Defender, Sentinel, Entra ID, Intune, and Purview, with cloud-native analytics and compliance on Microsoft Fabric and Azure AI.</li>
+        <li><strong>Advised public and private sector executives</strong> through workshops on DSPM, Azure AI Foundry, CMMC, and AI risk governance.</li>
+        <li><strong>Established an AI Center of Excellence</strong> to drive adoption, governance, and value realization, deploying dashboards, RBAC controls, and data migration workflows; trained 1,000+ users.</li>
       </ul>
     </div>
 
@@ -896,65 +899,75 @@ body {
 
     <div class="earlier-card">
       <div><span class="ec-title">Information Systems Security Manager</span> <span class="ec-company">— Netstar by Altron</span></div>
-      <span class="ec-date">July 2022 – Dec 2022</span>
-      <div class="ec-desc">ISO/IEC 27001 ISMS implementation, automated compliance reporting, 5% operational cost reduction.</div>
+      <span class="ec-date">Jul 2022 – Dec 2022</span>
+      <div class="ec-desc">Implemented ISO/IEC 27001 ISMS and automated compliance reporting; cut operational costs 5% via risk optimization.</div>
     </div>
     <div class="earlier-card">
       <div><span class="ec-title">Cybersecurity Consultant</span> <span class="ec-company">— Bupa Insurance Dental Corp</span></div>
       <span class="ec-date">Aug 2021 – Jul 2022</span>
-      <div class="ec-desc">Azure/SharePoint/Power Platform architecture; audit maturity uplift (Essential Eight).</div>
+      <div class="ec-desc">Architected Azure, SharePoint, and Power Platform solutions; uplifted audit maturity to the Essential Eight model.</div>
     </div>
     <div class="earlier-card">
       <div><span class="ec-title">Cyber Security Lead</span> <span class="ec-company">— Fixit IT Solutions</span></div>
       <span class="ec-date">Nov 2020 – Jun 2021</span>
-      <div class="ec-desc">Incident response, DLP strategies, compliance posture with Azure Policy &amp; Compliance Manager.</div>
+      <div class="ec-desc">Led incident response and DLP strategy; strengthened compliance with Azure Policy and Compliance Manager.</div>
     </div>
     <div class="earlier-card">
       <div><span class="ec-title">Security Uplift &amp; Cybersecurity Manager</span> <span class="ec-company">— Fabulate</span></div>
-      <span class="ec-date">Dec 2019 – Oct 2020</span>
-      <div class="ec-desc">Azure &amp; M365 security architecture, COE Starter Kit governance, Power Automate compliance.</div>
+      <span class="ec-date">Dec 2018 – Oct 2020</span>
+      <div class="ec-desc">Designed Azure/M365 security architecture, CoE Starter Kit governance, and Power Automate compliance workflows.</div>
     </div>
     <div class="earlier-card">
       <div><span class="ec-title">Director of Operations</span> <span class="ec-company">— Aarav Corporation Pvt Ltd</span></div>
       <span class="ec-date">Jul 2016 – Oct 2019</span>
-      <div class="ec-desc">Digital modernization, operational governance, Power Platform digital adoption strategies.</div>
+      <div class="ec-desc">Directed digital modernization, operational governance, and Power Platform digital adoption strategy.</div>
     </div>
   </div>
 
   <!-- VENTURES TAB -->
   <div id="tab-ventures" class="tab-panel">
-    <h2 class="section-title">Entrepreneurial &amp; Advisory Ventures</h2>
+    <h2 class="section-title">Entrepreneurial &amp; Advisory Leadership</h2>
     <div class="venture-card">
-      <h3>Co-Founder — 963it.ai</h3>
-      <a href="https://963it.ai" target="_blank" class="venture-link">https://963it.ai</a>
+      <h3>Co-Founder, 963it.ai</h3>
+      <a href="https://963it.ai" target="_blank" class="venture-link">963it.ai</a>
       <ul>
-        <li>Co-founded AI consulting venture focused on AI governance, go-to-market strategy, and secure cloud adoption initiatives.</li>
-        <li>Advise enterprise clients on Microsoft ecosystem partnerships, customer lifecycle management, and SaaS scalability.</li>
-        <li>Guide responsible AI frameworks, agentic architecture design, and commercial strategy for high-growth startups.</li>
-        <li>Mentor founders on platform partnerships, GTM execution, and scaling AI-driven products from zero to revenue.</li>
+        <li>Co-founded an AI consulting firm focused on AI governance, go-to-market strategy, and secure cloud adoption.</li>
+        <li>Advise enterprise clients and high-growth startups on Microsoft ecosystem partnerships, SaaS scalability, Responsible AI frameworks, and Agentic AI architecture.</li>
       </ul>
     </div>
   </div>
 
   <!-- CERTIFICATIONS TAB -->
   <div id="tab-certifications" class="tab-panel">
-    <h2 class="section-title">Certifications &amp; Education</h2>
-    <div class="cert-grid">
-      <div class="cert-item"><div class="cert-icon">AZ</div>AZ-305 — Azure Solutions Architect Expert</div>
-      <div class="cert-item"><div class="cert-icon">AI</div>AI-102 — Azure AI Engineer Associate</div>
-      <div class="cert-item"><div class="cert-icon">SC</div>SC-400 — Information Protection Admin</div>
-      <div class="cert-item"><div class="cert-icon">AZ</div>AZ-104 — Azure Administrator</div>
-      <div class="cert-item"><div class="cert-icon">AZ</div>AZ-900 — Azure Fundamentals</div>
-      <div class="cert-item"><div class="cert-icon">MS</div>MS-900 — M365 Fundamentals</div>
-      <div class="cert-item"><div class="cert-icon">AI</div>AI-900 — AI Fundamentals</div>
-      <div class="cert-item"><div class="cert-icon">SC</div>SC-900 — Security Fundamentals</div>
-      <div class="cert-item"><div class="cert-icon">PL</div>PL-900 — Power Platform Fundamentals</div>
-      <div class="cert-item"><div class="cert-icon">MB</div>MB-910 — Dynamics 365 Fundamentals</div>
-      <div class="cert-item"><div class="cert-icon">ISO</div>ISO 27001 Lead Auditor (2022)</div>
-      <div class="cert-item"><div class="cert-icon">S+</div>CompTIA Security+ (2021)</div>
-      <div class="cert-item"><div class="cert-icon">CEH</div>Certified Ethical Hacker — Monash University</div>
-      <div class="cert-item"><div class="cert-icon">BC</div>Blockchain &amp; Cryptocurrency — UC Berkeley</div>
-      <div class="cert-item"><div class="cert-icon">🔒</div>Pursuing CISSP (2026)</div>
+    <h2 class="section-title">Certifications &amp; Professional Development</h2>
+
+    <div class="cert-group">
+      <h3>Microsoft</h3>
+      <div class="cert-grid">
+        <div class="cert-item"><div class="cert-icon">AZ</div>Azure Solutions Architect Expert (AZ-305)</div>
+        <div class="cert-item"><div class="cert-icon">AI</div>Azure AI Engineer (AI-102)</div>
+        <div class="cert-item"><div class="cert-icon">SC</div>Information Protection (SC-400)</div>
+        <div class="cert-item"><div class="cert-icon">AZ</div>AZ-104 · AZ-900</div>
+        <div class="cert-item"><div class="cert-icon">MS</div>MS-900 · AI-900</div>
+        <div class="cert-item"><div class="cert-icon">SC</div>SC-900 · PL-900 · MB-910</div>
+      </div>
+    </div>
+
+    <div class="cert-group">
+      <h3>Security &amp; Governance</h3>
+      <div class="cert-grid">
+        <div class="cert-item"><div class="cert-icon">ISO</div>ISO/IEC 27001 Lead Auditor (2022)</div>
+        <div class="cert-item"><div class="cert-icon">S+</div>CompTIA Security+ (2021)</div>
+        <div class="cert-item"><div class="cert-icon">CEH</div>Certified Ethical Hacker, Monash University (2020)</div>
+        <div class="cert-item"><div class="cert-icon">AIGP</div>IAPP AIGP — AI Governance Professional (in progress, 2026)</div>
+      </div>
+    </div>
+
+    <div class="cert-group">
+      <h3>Executive Education</h3>
+      <div class="cert-grid">
+        <div class="cert-item"><div class="cert-icon">BC</div>Blockchain &amp; Cryptocurrency, UC Berkeley (2021)</div>
+      </div>
     </div>
   </div>
 
@@ -968,19 +981,12 @@ body {
 function switchTab(tabId) {
   var panels = document.querySelectorAll('.tab-panel');
   var buttons = document.querySelectorAll('.tab-btn');
-  for (var i = 0; i < panels.length; i++) {
-    panels[i].classList.remove('active');
-  }
-  for (var i = 0; i < buttons.length; i++) {
-    buttons[i].classList.remove('active');
-  }
+  for (var i = 0; i < panels.length; i++) { panels[i].classList.remove('active'); }
+  for (var i = 0; i < buttons.length; i++) { buttons[i].classList.remove('active'); }
   document.getElementById('tab-' + tabId).classList.add('active');
-  var tabNames = ['summary','competencies','experience','ventures','certifications'];
+  var tabNames = ['summary','achievements','competencies','experience','ventures','certifications'];
   for (var i = 0; i < tabNames.length; i++) {
-    if (tabNames[i] === tabId) {
-      buttons[i].classList.add('active');
-      break;
-    }
+    if (tabNames[i] === tabId) { buttons[i].classList.add('active'); break; }
   }
   window.scrollTo(0, document.querySelector('.nav-container').offsetTop);
 }
